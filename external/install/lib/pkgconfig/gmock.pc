@@ -1,0 +1,10 @@
+libdir=/home/leex9121/3081_s20/repo-leex9121/external/install/lib
+includedir=/home/leex9121/3081_s20/repo-leex9121/external/install/include
+
+Name: gmock
+Description: GoogleMock (without main() function)
+Version: 1.10.0
+URL: https://github.com/google/googletest
+Requires: gtest
+Libs: -L${libdir} -lgmock -lpthread
+Cflags: -I${includedir} -DGTEST_HAS_PTHREAD=1
